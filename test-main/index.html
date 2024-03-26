@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess The Number</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="switch-page-language" href="ru/index.html">
+    <div class="switch-language">Russian</div>
+  </a>
+  <div class="form">
+      <label for="guessField">
+        Type Your Number:
+      </label>
+        <input type="number" class="guessField" id="guessField" autofocus inputmode="numeric">
+        <input type="submit" value="Submit Your Number" class="submitNumber" id="submitNumber">
+        <h2>Guessed Number List</h2>
+        <ul id="guessedNumberList"></ul>
+        <h3>Total Attempts: </h3>
+        <div class="restart-elements">
+          <div class="restart">Restart Game</div>
+        </div>
+    </div>
+</body>
+</html>

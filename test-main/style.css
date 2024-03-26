@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Cascadia Code", monospace;
+}
+
+body {
+  background-color: #0a0a0a;
+  overflow: hidden;
+}
+
+.switch-page-language {
+  text-decoration: none;
+}
+
+.switch-language {
+  color: white;
+  margin: 1rem 1rem 0;
+  text-align: end;
+  cursor: default;
+}
+
+.switch-language:hover {
+  color: cyan;
+}
+
+.switch-language:active {
+  color: white;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+label {
+  color: white;
+  /* margin-bottom: 1em; */
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-align: center;
+  position: static;
+}
+
+.guessField {
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem auto;
+  border: none;
+  background-color: rgb(200, 200, 200);
+  box-shadow: inset 0px 0px 5px black;
+  color: rgb(30, 30, 30);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.submitNumber {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  background-color: transparent;
+  color: white;
+}
+
+.submitNumber:hover {
+  background-color: rgb(200, 200, 200);
+  color: rgb(30, 30, 30);
+  box-shadow: inset 0px 0px 3px black;
+}
+
+.submitNumber:active {
+  background-color: transparent;
+  color: white;
+}
+
+ul {
+  display: flex;
+  width: 80%;
+  height: 20%;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+ul,
+li {
+  /* width: 95%; */
+  margin-top: 1rem;
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+#guessedNumberList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 95%;
+  word-wrap: break-all;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 1rem;
+  margin: 2rem auto 0rem auto;
+}
+
+h3 {
+  color: white;
+  font-size: 1rem;
+  margin-top: 1rem;
+  opacity: 0%;
+}
+
+@media (max-width: 500px) {
+  .guessField {
+    width: 80vw;
+  }
+  .submitNumber {
+    width: 60vw;
+  }
+  label {
+    font-size: 2rem;
+  }
+}
+
+.guessed-number-correct {
+  color: limegreen;
+}
+
+.restart-elements {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  color: white;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.restart {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.restart:hover {
+  color: cyan;
+}
+
+.restart:active {
+  color: white;
+}
